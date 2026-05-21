@@ -4,13 +4,22 @@ module TOV
     using Printf
     using DataInterpolations
     using DifferentialEquations
+    using SciMLBase
     using Plots
     
-    include("../utils/utils.jl")
-    using .Utils
-    
-    include("../equation_of_state/neos.jl")
-    using .NEOS
+    if isdefined(parentmodule(@__MODULE__), :Utils)
+        @eval using ..Utils
+    else
+        include("../utils/utils.jl")
+        using .Utils
+    end
+
+    if isdefined(parentmodule(@__MODULE__), :NEOS)
+        @eval using ..NEOS
+    else
+        include("../equation_of_state/neos.jl")
+        using .NEOS
+    end
 
     export TovProblem, TovSolution
     export setupTOVeq, solveTOVeq, getMassRadiusRelation
