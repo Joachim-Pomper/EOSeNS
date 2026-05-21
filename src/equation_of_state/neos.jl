@@ -2,6 +2,7 @@ module NEOS
 
     using HDF5
     using Printf
+    using DelimitedFiles
     using DataInterpolations
     using Roots 
     

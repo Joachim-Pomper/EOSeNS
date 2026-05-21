@@ -2,7 +2,7 @@
 
 julia_version = "1.12.5"
 manifest_format = "2.0"
-project_hash = "43911d0691cab88ee57f10a2643a4ead931abe9f"
+project_hash = "b811eaa73ccbd3d0f9ce214175ae9bc2b10fdf09"
 
 [[deps.ADTypes]]
 git-tree-sha1 = "bbc22a9a08a0ef6460041086d8a7b27940ed4ffd"
@@ -458,7 +458,7 @@ uuid = "f43a241f-c20a-4ad4-852c-f6b1247861c6"
 version = "1.7.0"
 
 [[deps.EOSeNS]]
-deps = ["DataInterpolations", "DifferentialEquations", "HDF5", "PlotlyJS", "Plots", "Printf", "Roots", "SciMLBase", "UniCon"]
+deps = ["DataInterpolations", "DelimitedFiles", "DifferentialEquations", "HDF5", "PlotlyJS", "Plots", "Printf", "Roots", "SciMLBase", "UniCon"]
 path = "."
 uuid = "09db3654-2b8c-4b97-9e33-9f4f5d45d04b"
 version = "0.1.0"
