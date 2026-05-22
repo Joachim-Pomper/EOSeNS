@@ -11,6 +11,7 @@ module NEOS
 
     export EquationOfState, BarotropicEOS, polytropic_eos
     export bblTableEOS, bblPolytropeEOS
+    export readComposeColdNS1dEos
     export addCrustByJumping, addCrustByGlueing, bbpnvCrustEOS
     export writeHDF5BarotropicEOS, readHDF5BarotropicEOS
     export getSymbol, getUnit, getDimension, getLabels
@@ -47,5 +48,6 @@ module NEOS
     include("barotropic_eos.jl")
     include("bombaci_logoteta.jl")
     include("add_crust.jl")
+    include("compose_eos.jl")
 
 end
